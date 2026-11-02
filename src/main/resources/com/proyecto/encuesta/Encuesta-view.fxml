@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="ventana" alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proyecto.encuesta.EncuestaController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane fx:id="panelraiz">
+      <children>
+         <Button fx:id="Back" layoutX="10.0" layoutY="380.0" mnemonicParsing="false" text="Anterior" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="380.0" />
+         <Button fx:id="Next" layoutX="490.0" layoutY="380.0" mnemonicParsing="false" text="Siguiente" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="380.0" />
+      
+          <Label fx:id="PreguntaText" layoutX="183.0" layoutY="86.0" prefHeight="53.0" prefWidth="250.0" text="Label para la pregunta de 250" AnchorPane.leftAnchor="155.0" />
+         <RadioButton fx:id="dos" layoutX="240.0" layoutY="186.0" mnemonicParsing="false" text="2" AnchorPane.leftAnchor="240.0">
+            <toggleGroup>
+               <ToggleGroup fx:id="GrupoEncuesta" />
+            </toggleGroup></RadioButton>
+         <RadioButton fx:id="tres" layoutX="280.0" layoutY="186.0" mnemonicParsing="false" text="3" toggleGroup="$GrupoEncuesta" AnchorPane.leftAnchor="280.0" />
+         <RadioButton fx:id="cuatro" layoutX="318.0" layoutY="186.0" mnemonicParsing="false" text="4" toggleGroup="$GrupoEncuesta" AnchorPane.leftAnchor="320.0" />
+         <RadioButton fx:id="cinco" layoutX="356.0" layoutY="186.0" mnemonicParsing="false" text="5" toggleGroup="$GrupoEncuesta" AnchorPane.leftAnchor="360.0" />
+         <RadioButton fx:id="uno" layoutX="202.0" layoutY="186.0" mnemonicParsing="false" text="1" toggleGroup="$GrupoEncuesta" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="332.0" />
+         <TextArea layoutX="69.0" layoutY="150.0" prefHeight="72.0" prefWidth="450.0" visible="false" />
+      </children></AnchorPane>
+</VBox>
